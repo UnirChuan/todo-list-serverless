@@ -5,6 +5,8 @@ service: serverless-rest-api-with-dynamodb
 
 frameworkVersion: ">=1.1.0 <3.0.0" 
 
+
+
 provider:
   name: aws
   runtime: python3.8
