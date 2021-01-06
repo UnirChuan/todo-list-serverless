@@ -204,9 +204,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-
                 "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609931326464-2021-01-06T11:08:46.464Z/serverless-rest-api-with-dynamodb.zip"
-
               },
               "FunctionName": "serverless-rest-api-with-dynamodb-dev-create",
               "Handler": "todos/create.create",
@@ -246,9 +244,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-
                 "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609931326464-2021-01-06T11:08:46.464Z/serverless-rest-api-with-dynamodb.zip"
-
               },
               "FunctionName": "serverless-rest-api-with-dynamodb-dev-list",
               "Handler": "todos/list.list",
@@ -288,9 +284,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-
                 "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609931326464-2021-01-06T11:08:46.464Z/serverless-rest-api-with-dynamodb.zip"
-
               },
               "FunctionName": "serverless-rest-api-with-dynamodb-dev-get",
               "Handler": "todos/get.get",
@@ -330,9 +324,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-
                 "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609931326464-2021-01-06T11:08:46.464Z/serverless-rest-api-with-dynamodb.zip"
-
               },
               "FunctionName": "serverless-rest-api-with-dynamodb-dev-update",
               "Handler": "todos/update.update",
@@ -372,9 +364,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-
                 "S3Key": "serverless/serverless-rest-api-with-dynamodb/dev/1609931326464-2021-01-06T11:08:46.464Z/serverless-rest-api-with-dynamodb.zip"
-
               },
               "FunctionName": "serverless-rest-api-with-dynamodb-dev-delete",
               "Handler": "todos/delete.delete",
@@ -751,9 +741,7 @@
               "MethodResponses": []
             }
           },
-
           "ApiGatewayDeployment1609931324909": {
-
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -1337,9 +1325,7 @@
     "artifact": "/home/ec2-user/environment/API-RESTful/.serverless/serverless-rest-api-with-dynamodb.zip"
   },
   "package": {
-
     "artifactDirectoryName": "serverless/serverless-rest-api-with-dynamodb/dev/1609931326464-2021-01-06T11:08:46.464Z",
-
     "artifact": "serverless-rest-api-with-dynamodb.zip"
   }
 }
