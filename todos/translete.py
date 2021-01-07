@@ -8,7 +8,7 @@ translate = boto3.client('translate')
 comprehend = boto3.client('comprehend')
 
 
-def get(event, context):
+def translete(event, context):
     table = dynamodb.Table(os.environ['DYNAMODB_TABLE'])
 
     # fetch all todos from the database

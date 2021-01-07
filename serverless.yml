@@ -46,8 +46,8 @@ functions:
           method: get
           cors: true
           
-  translete:
-    handler: todos/translete.get
+  get:
+    handler: todos/translete.translete
     events:
       - http:
           path: todos/{id}/{language}
