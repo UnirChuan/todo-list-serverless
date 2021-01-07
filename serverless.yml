@@ -37,6 +37,14 @@ functions:
           path: todos
           method: get
           cors: true
+          
+  translete:
+    handler: todos/translete.translete
+    events:
+      - http:
+          path: todos/{id}/{language}
+          method: get
+          cors: true          
 
   get:
     handler: todos/get.get
@@ -46,14 +54,6 @@ functions:
           method: get
           cors: true
   
-  translete:
-    handler: todos/translete.translete
-    events:
-      - http:
-          path: todos/{id}/{language}
-          method: get
-          cors: true        
-
   update:
     handler: todos/update.update
     events:
