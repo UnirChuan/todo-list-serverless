@@ -17,7 +17,7 @@ def get(event, context):
             'id': event['pathParameters']['id']
         }
     )
-    target = event['pathParameters']['lang']
+    target = event['pathParameters']['language']
     task =  result['Item']['test']
     source_lenguage = detect_language(task)
     
