@@ -23,7 +23,7 @@ def translete(event, context):
     
     source = source_lenguage['Languages'][0]['LanguageCode']
     
-    traslated = translate_text(task, source, target)
+    response = translate_text(task, source, target)
 
     # create a response
     response = {
