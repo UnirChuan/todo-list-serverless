@@ -4,7 +4,7 @@ import boto3
 from todos import decimalencoder
 
 dynamodb = boto3.resource('dynamodb')
-translate = boto3.client('translate')
+translated = boto3.client('translate')
 comprehend = boto3.client('comprehend')
 
 
@@ -39,6 +39,6 @@ def detect_language(task):
 
 def translate_text(task, source, target):
     
-    response = translate.translate_text(Test=task, SourceLanguageCode=source , TargetLanguageCode=target)
+    response = translated.translate_text(Test=task, SourceLanguageCode=source , TargetLanguageCode=target)
     
     return response
