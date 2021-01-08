@@ -4,7 +4,7 @@ import boto3
 from todos import decimalencoder
 
 dynamodb = boto3.resource('dynamodb')
- = boto3.client('translate')
+translated = boto3.client('translate')
 comprehend = boto3.client('comprehend')
 
 
