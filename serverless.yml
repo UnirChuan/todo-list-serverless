@@ -19,12 +19,15 @@ provider:
         - dynamodb:PutItem
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
+      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
+    - Effect: Allow
+      Action:
         - translate:GetTerminology
         - comprehend:DetectDominantLanguage
         - translate:GetParallelData"
         - translate:TranslateText
         - translate:DescribeTextTranslationJob
-      Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
+      Resource: "*"
                 
 
 functions:
