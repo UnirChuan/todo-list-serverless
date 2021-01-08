@@ -25,7 +25,7 @@ def translete(event, context):
     
     tra = translate_text(task, source, target)
     
-    result['Item']["text"] = str(tra)
+    result['Item']["text"] = str(tra["TranslatedText"])
 
     # create a response
     response = {
