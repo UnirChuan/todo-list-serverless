@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "description": "Serverless CRUD service exposing a REST HTTP interface",
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "aws-translate-json": "0.0.3",
+    "comprehend": "^1.0.0"
+  }
 }
