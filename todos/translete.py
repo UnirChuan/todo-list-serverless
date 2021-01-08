@@ -23,12 +23,14 @@ def translete(event, context):
     
     source = source_lenguage['Languages'][0]['LanguageCode']
     
-    response = translate_text(task, source, target)
+    tra = translate_text(task, source, target)
+    
+    result['Item']["text"] = str(tra)
 
     # create a response
     response = {
         "statusCode": 200,
-        "body": json.dumps(result['Items'], cls=decimalencoder.DecimalEncoder)
+        "body": json.dumps(result['Item'], cls=decimalencoder.DecimalEncoder)
     }
 
     return response
