@@ -34,11 +34,11 @@ def translete(event, context):
     return response
 
 def detect_language(task):
-    response = comprehend.detect_dominant_language(task)
+    response = comprehend.detect_dominant_language(Text=task)
     return response
 
 def translate_text(task, source, target):
     
-    response = translated.translate_text(Test=task, SourceLanguageCode=source , TargetLanguageCode=target)
+    response = translated.translate_text(Text=task, SourceLanguageCode=source , TargetLanguageCode=target)
     
     return response
