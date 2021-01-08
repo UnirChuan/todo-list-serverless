@@ -18,7 +18,7 @@ def translete(event, context):
         }
     )
     target = event['pathParameters']['language']
-    task =  result['Item']['test']
+    task =  result['Item']['text']
     source_lenguage = detect_language(task)
     
     source = source_lenguage['Languages'][0]['LanguageCode']
