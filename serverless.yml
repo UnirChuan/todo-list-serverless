@@ -1,13 +1,11 @@
 org: UnirChuan
 app: todo-list-serverless
 service: serverless-rest-api-with-dynamodb
-
-
 frameworkVersion: ">=1.1.0 <3.0.0" 
-
 provider:
   name: aws
   runtime: python3.8
+  
   environment:
     DYNAMODB_TABLE: ${self:service}-${opt:stage, self:provider.stage}
   iamRoleStatements:
